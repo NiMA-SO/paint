@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paint</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <div class="menu" id="eraser">
+                    <i class="fa-solid fa-eraser"></i>
+                    <label for="">Eraser</label>
+                </div>
+                <div class="menu active" id="brush">
+                    <i class="fa-solid fa-paint-brush"></i>
+                    <label for="">Brush</label>
+                </div>
+                <div class="menu">
+                    <i class="fa-sharp fa-solid fa-palette"></i>
+                    <label for="">Choose Color</label>
+                </div>
+                <input type="color" id="color-picker" style="margin-right: 10px;">
+                <br>
+                <input type="range" id="brush-width" min="1" max="10">
+            </nav>
+            <div id="BTNs">
+                <button id="Save">Save</button>
+                <button id="Clear">Clear</button>
+            </div>
+        </header>
+        <canvas></canvas>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
